@@ -26,6 +26,7 @@ class kerberos::client (
   $pkinit_anchors    = $kerberos::pkinit_anchors_cfg,
   $extra_realms      = $kerberos::extra_realms,
   $capaths           = $kerberos::capaths,
+  $auth_to_local     = $kerberos::auth_to_local,
 
   $client_packages = $kerberos::client_packages,
 ) inherits kerberos {

@@ -73,6 +73,9 @@
 # $capaths
 #   Add [capaths] section to krb5.conf
 #
+# $auth_to_local
+#   Add auth_to_local entries to realm in krb5.conf
+#
 # kdc.conf
 # $kdc_ports
 #   Ports to have the KDC listen on.
@@ -212,6 +215,7 @@ class kerberos(
   $pkinit_anchors = undef,
   $extra_realms = {},
   $capaths = {},
+  $auth_to_local = [],
 
   $kdc_ports = '88',
   $kdc_database_path = $kerberos::params::kdc_database_path,
