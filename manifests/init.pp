@@ -203,6 +203,7 @@ class kerberos(
 
   # settings in files
   $realm = 'EXAMPLE.COM',
+  $default_realm = 'EXAMPLE.COM',
   $domain_realm = {},
   $kdcs = [],
   $master_kdc = undef,
